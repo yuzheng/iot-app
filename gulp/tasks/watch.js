@@ -8,7 +8,7 @@ gulp.task('watch', function () {
         gulp.start(['webpack']);
     });
 
-    // styl
+    // css
     watch(config.css, function () {
         gulp.start(['css']);
     });

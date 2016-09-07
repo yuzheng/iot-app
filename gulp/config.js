@@ -15,7 +15,7 @@ module.exports = {
   },
 
   copy: {
-    src: [   // 今後ただコピーするファイルが増えそうなので配列にしておく
+    src: [   // www 檔案位置(之後新增www 可於此設定)
       src + '/www/index.html'
     ],
     dest: dest
@@ -33,11 +33,11 @@ module.exports = {
   },
 
   css: {
-    src: [  // もし外部のcssフレームワーク使うなら配列の先頭で読み込むと良い
-      src + '/sass/**/!(_)*'  // ファイル名の先頭がアンスコはビルド対象外にする
+    src: [  
+      src + '/sass/**/!(_)*'  
     ],
     dest: dest + '/css/',
-    output: 'app.css',  // 出力ファイル名
+    output: 'app.css',  // 輸出的css名稱
     autoprefixer: {
       browsers: ['last 2 versions']
     },

@@ -9,10 +9,10 @@ var config = require('../config').css;
 
 gulp.task('css', function () {
     gulp.src(config.src)
-        .pipe(plumber())              // エラー出ても止まらないようにする
-        .pipe(sass())               // 実際コンパイルしてるのはここ
-        .pipe(concat(config.output))  // 1つのファイルに固める
-        .pipe(autoprefixer(config.autoprefixer))  // vendor-prefixつける
-        .pipe(gulpif(config.minify, minify()))    // 必要ならminifyする
-        .pipe(gulp.dest(config.dest));            // 出力する
+        .pipe(plumber())             
+        .pipe(sass())               
+        .pipe(concat(config.output))  
+        .pipe(autoprefixer(config.autoprefixer))  
+        .pipe(gulpif(config.minify, minify()))    
+        .pipe(gulp.dest(config.dest));           
 });
