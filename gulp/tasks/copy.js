@@ -1,3 +1,5 @@
+// 搬移靜態網頁(html)
+
 var gulp = require('gulp');
 var config = require('../config').copy;
 

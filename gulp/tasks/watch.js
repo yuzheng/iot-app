@@ -1,3 +1,5 @@
+// 監控 js, css, html 的變更
+
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var config = require('../config').watch;
